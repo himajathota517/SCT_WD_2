@@ -83,5 +83,3 @@ lapBtn.addEventListener('click', recordLap);
 // Initial state
 pauseBtn.disabled = true;
 lapBtn.disabled = true;
-Task-2 
-Script.js

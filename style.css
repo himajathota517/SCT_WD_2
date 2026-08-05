@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.display {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #667eea;
+    margin: 30px 0;
+    font-family: 'Courier New', monospace;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 15px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#startBtn {
+    background: #4CAF50;
+    color: white;
+}
+
+#pauseBtn {
+    background: #ff9800;
+    color: white;
+}
+
+#lapBtn {
+    background: #2196F3;
+    color: white;
+}
+
+#resetBtn {
+    background: #f44336;
+    color: white;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.laps {
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.laps h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#lapsList {
+    list-style: none;
+}
+
+#lapsList li {
+    background: #f5f5f5;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Courier New', monospace;
+}
+
+@media (max-width: 480px) {
+    .display {
+        font-size: 2.5rem;
+    }
+    
+    .buttons {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+Task-2
+Style.css
